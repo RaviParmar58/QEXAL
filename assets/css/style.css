@@ -60,15 +60,15 @@ h4{
 	color: var(--heading-color);
 }
 
-.fw-bold{
-	font-weight: 700 !important;
-}
-
 p{
 	font-size: var(--p-fs);
 	font-family: var(--open-sans);
 	color: var(--gray-color);
 	line-height: 1.7;
+}
+
+.fw-bold{
+	font-weight: 700 !important;
 }
 
 .rounded-btn{
@@ -91,6 +91,26 @@ p{
 	transition: 0.5s;
 	font-weight: 600;
 	box-shadow: 0 4px 20px rgb(39 83 255 / 15%);
+}
+
+.white-btn{
+	font-family: var(--open-sans);
+	font-size: var(--main-btn-fs);
+	background-color: var(--white-color);
+	color: var(--primary-color);
+	padding: 14px 30px;
+	margin-top: 32px;
+	transition: 0.5s;
+	font-weight: 600;
+	box-shadow: 0 4px 20px rgb(255 255 255 / 15%); 
+}
+
+.white-btn:hover{
+	transform: translateY(-4px);
+	transition: 0.5s;
+	color: var(--hard-blue) !important;
+	box-shadow: 0 3px 10px rgb(39 83 255 / 50%);
+	background-color: var(--white-color);
 }
 
 .main-btn:hover , .rounded-btn:hover{
@@ -207,7 +227,7 @@ p{
 
 
 /*========================================
-		Our Features Section-3 Design
+		Section-3 Our Features Design
 ========================================*/
 
 .features-image{
@@ -230,18 +250,87 @@ p{
 }
 
 
+/*========================================
+	  Section-4 Demonstration Design
+========================================*/
+
+.demonstration{
+	position: relative;
+}
+
+.bg-gradint-color{
+	background: linear-gradient(to right, #2753ff 0%, #a369ff 100%);
+}
+
+.bg-overlay-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.demonstration h2{
+	color: 	var(--white-color);
+	font-size: 	40px;
+}
+
+.demonstration p{
+	color: 	var(--white-color);
+	font-size: 16px;
+}
+
+.demonstration .text-center{
+	z-index: 1;
+}
 
 
+/*========================================
+	  Section-5 Pricing Design
+========================================*/
 
+.pricing .nav-tabs {
+	padding: 5px;
+	background-color: #f2f4f7;
+	border-radius: 100px;
+}
 
+.pricing .nav-tabs .nav-item{
+	line-height: 25px !important;
+}
 
+.pricing .nav-tabs .pricing-btn{
+	font-family: var(--open-sans);
+	font-size: var(--rounded-btn-fs);
+	background-color: var(--gray-colors);
+	color: var(--heading-color) !important;
+	padding: 10px 30px !important;
+	font-weight: 600;
+	border: none;
+	margin: 0 2px 0 2px !important;
 
+}
 
+.pricing .nav-tabs .pricing-btn.active{
+	font-family: var(--open-sans);
+	font-size: var(--rounded-btn-fs);
+	background-color: var(--primary-color);
+	color: var(--white-color) !important;
+	padding: 10px 30px !important;
+	font-weight: 600;
+	border: none;
+	margin: 0 2px 0 2px !important;
+}
 
-
-
-
-
+.rounded-btn{
+	font-family: var(--open-sans);
+	font-size: var(--rounded-btn-fs);
+	background-color: var(--primary-color);
+	color: var(--white-color);
+	padding: 8px 20px;
+	font-weight: 600;
+	transition: 0.5s;
+}
 
 
 /*
