@@ -10,7 +10,7 @@
 	box-sizing: border-box;
 }
 
-:root{
+.body-var{
 	--open-sans: 'Open Sans', sans-serif;
 	--assistant: 'Assistant', sans-serif;
 	--primary-color: #2753ff;
@@ -20,12 +20,15 @@
 	--white-color: #fff;
 	--heading-color: #29344a;
 	--gray-btn-bg: #e9edff;
+	--black-color: #000;
 	--h1-fs: 48px;
 	--h2-fs: 32px;
 	--h4-fs: 22px;
+	--h5-fs: 19px;
 	--p-fs: 15px;
 	--main-btn-fs: 15px;
 	--rounded-btn-fs: 14px;
+	--bg-light: #fbfbfb;
 }
 
 
@@ -62,11 +65,21 @@ h4{
 	font-weight: 600;
 }
 
+h5{
+	font-size: var(--h5-fs);
+	color: var(--heading-color);
+	font-weight: 600;
+}
+
 p{
 	font-size: var(--p-fs);
 	font-family: var(--open-sans);
 	color: var(--gray-color);
 	line-height: 1.7;
+}
+
+.bg-light{
+	background-color: var(--bg-light);
 }
 
 .fw-bold{
@@ -107,6 +120,18 @@ p{
 	box-shadow: 0 4px 20px rgb(255 255 255 / 15%); 
 }
 
+.rounded-white-btn{
+	font-family: var(--open-sans);
+	font-size: var(--main-btn-fs);
+	background-color: var(--white-color);
+	color: var(--primary-color);
+	padding: 14px 30px;
+	transition: 0.5s;
+	font-weight: 600;
+	box-shadow: 0 4px 20px rgb(255 255 255 / 15%); 
+	border-radius: 100px !important;	
+}
+
 .gray-btn{
 	font-family: var(--open-sans);
 	font-size: var(--main-btn-fs);
@@ -119,6 +144,13 @@ p{
 }
 
 .white-btn:hover, .gray-btn:hover{
+	transform: translateY(-4px);
+	transition: 0.5s;
+	color: var(--hard-blue) !important;
+	box-shadow: 0 3px 8px rgb(39 83 255 / 20%);
+}
+
+.white-btn:hover, .gray-btn:hover, .rounded-white-btn:hover{
 	transform: translateY(-4px);
 	transition: 0.5s;
 	color: var(--hard-blue) !important;
@@ -140,6 +172,7 @@ p{
 .btn:hover{
 	color: var(--white-color);
 }
+
 
 /*-----  Responsive Css  -----*/
 
@@ -375,6 +408,79 @@ p{
 	font-size: 12px;
 }
 
+
+/*========================================
+	  Section-5 Our Team Design
+========================================*/
+
+.social-icon{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transform: translateY(75px);
+	transition: .5s;
+	background-color: rgba(0, 0, 0, .5);
+
+}
+
+.social-icon li a{
+	color: var(--white-color);
+}
+
+.team-box:hover .social-icon{
+	transform: translateY(15px);
+	transition: .5s;
+}
+
+.fa-facebook-f:hover{
+	color: #2753ff;
+	transition: all 0.2s;
+}
+.fa-twitter:hover{
+	color: #56c6e6;
+	transition: all 0.2s;
+}
+.fa-instagram:hover{
+	color: #f43958;
+	transition: all 0.2s;
+}
+ 
+
+
+/*========================================
+	  Section-6 Our Blog Design
+========================================*/
+
+.our-blog span{
+	background-color: rgba(39,83,255,0.1);
+	color: var(--primary-color);
+	box-shadow: 0 1px 1px rgb(39 83 255 / 50%);
+	padding: 5px 12px;
+	font-size: 12px;
+	font-family: var(--open-sans);
+	font-weight: 700;
+	border-radius: 4px;
+	line-height: 1px;
+}
+
+
+/*================================================================================
+	  			Section-7 Join our Growing Community Design
+================================================================================*/
+
+
+.bg-image{
+	background-size: cover;
+}
+
+.bg-overlay-img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 
 
 /*
